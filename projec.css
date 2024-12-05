@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orbit{
+    height: 200px;
+    width: 200px;
+  /* justify-content: center;
+  align-items: center; */
+    position: relative;
+}
+.sun{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color:#FCE570;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   left: -60px;
+   top: -63px;
+    
+   
+}
+.mercury{
+    background-color: #e5e5e5;
+    height: 2rem;
+    width: 2rem;
+    font-size: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: mur;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mur{
+    from{
+        transform: rotate(0deg) translate(112px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(112px) ;
+    }
+}
+.ormer{
+    height: 225px ;
+    width: 225px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -95px;
+    top: -98px;
+     
+}
+.venus{
+    background-color: #968396 ;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: ven;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ven{
+    from{
+        transform: rotate(0deg) translate(150px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(150px) ;
+    }
+}
+.orven{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position:absolute;
+    left: -120px;
+    top: -123px;
+
+}
+.earth{
+    background-color: #A6356C ;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: ear;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ear{
+    from{
+        transform: rotate(0deg) translate(170px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(170px) ;
+    }
+}
+.orear{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -150px;
+    top: -153px;
+}
+
+.mars{
+    background-color:#9C2E35 ;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: mar;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes mar{
+    from{
+        transform: rotate(0deg) translate(210px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(210px) ;
+    }
+}
+.ormar{
+    height: 415px;
+    width: 415px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -180px;
+    top: -183px;
+
+}
+.jupiter{
+    background-color:#bcafb2 ;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: jup;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes jup{
+    from{
+        transform: rotate(0deg) translate(260px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(260px) ;
+    }
+}
+.orjup{
+    height: 540px;
+    width: 540px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -230px;
+    top: -236px;
+}
+.saturn{
+    background-color:#ab604a;
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: sar;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes sar{
+    from{
+        transform: rotate(0deg) translate(310px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(310px) ;
+    }
+}
+.orsat{
+    height: 620px;
+    width: 620px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -265px;
+    top: -268px;
+}
+.uranus{
+    background-color:#ACE5EE;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: ura;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ura{
+    from{
+        transform: rotate(0deg) translate(350px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(350px) ;
+    }
+}
+.orura{
+    height: 690px;
+    width: 690px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -300px;
+    top: -303px;
+} 
+.neptune{
+    background-color:#76b7b7;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation-name: nep;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes nep{
+    from{
+        transform: rotate(0deg) translate(400px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(400px) ;
+    }
+}
+.ornep{
+    height: 778px;
+    width: 781px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    position: absolute;
+    left: -345px;
+    top: -348px;
+}
